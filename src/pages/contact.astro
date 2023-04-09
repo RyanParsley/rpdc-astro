@@ -1,8 +1,15 @@
 ---
 import Layout from '../layouts/Page.astro';
 ---
-<Layout>
-  <h1>What's on your mind?</h1>
+<style>
+  input {
+    display: block;
+  }
+</style>
+<Layout
+  title="What's on your mind?"
+  description="Send me a message if you're into that sort of thing"
+  >
   <form action="https://formspree.io/rmparsley@gmail.com"
         method="POST">
       <label>Your Name</label>

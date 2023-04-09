@@ -1,7 +1,7 @@
 ---
 title: This productivity thing is a fad
 description: ""
-pubDate: 1232426101
+pubDate: 2009-01-19
 permalink: prose/productivity-thing-fad
 tags:
 - Right Brain

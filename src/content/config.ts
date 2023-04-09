@@ -1,5 +1,15 @@
 import { defineCollection, z } from "astro:content";
 
+const page = defineCollection({
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    // Transform string to Date object
+    heroImage: z.string().optional(),
+  }),
+});
+
 const blog = defineCollection({
   // Type-check frontmatter using a schema
   schema: z.object({
@@ -28,7 +38,6 @@ const tangent = defineCollection({
     pubDate: z
       .string()
       .or(z.date())
-      .or(z.number())
       .transform((val) => new Date(val)),
     updatedpubDate: z
       .string()
@@ -38,4 +47,4 @@ const tangent = defineCollection({
   }),
 });
 
-export const collections = { blog, tangent };
+export const collections = { blog, tangent, page };

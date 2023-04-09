@@ -1,7 +1,7 @@
 ---
 title: Learning How to Love... Twitter
 description: ""
-pubDate: 1206064773
+pubDate: 2008-03-20
 permalink: prose/learning-how-love-twitter
 tags:
 - Confabulation

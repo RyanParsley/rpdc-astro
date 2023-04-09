@@ -1,7 +1,7 @@
 ---
 title: Baseline grid in Illustrator
 description: ""
-pubDate: 1336693328
+pubDate: 2012-05-10
 permalink: prose/baseline-grid-illustrator
 tags:
 - Left Brain

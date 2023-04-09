@@ -1,7 +1,7 @@
 ---
 title: 'Dr. Strangecode or: How I Learned to Stop Worrying and Love the DOM'
 description: ""
-pubDate: 1202349213
+pubDate: 2008-02-06
 permalink: prose/dr-strangecode-or-how-i-learned-stop-worrying-and-love-dom
 tags:
 - Left Brain

@@ -1,7 +1,7 @@
 ---
 title: One size never fits all
 description: ""
-pubDate: 1282088628
+pubDate: 2010-08-17
 tags:
 - Right Brain
 ---

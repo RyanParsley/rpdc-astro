@@ -1,7 +1,7 @@
 ---
 title: Relatively timeless web design books
 description: ""
-pubDate: 1238330138
+pubDate: 2009-03-29
 permalink: prose/relatively-timeless-web-design-books
 tags:
 - Left Brain

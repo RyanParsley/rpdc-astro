@@ -1,7 +1,7 @@
 ---
 title: Virtually OK
 description: ""
-pubDate: 1232745175
+pubDate: 2009-01-23 
 permalink: prose/virtually-ok
 tags:
 - Left Brain

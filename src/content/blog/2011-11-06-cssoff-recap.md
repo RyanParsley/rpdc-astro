@@ -1,7 +1,7 @@
 ---
 title: CSSOff recap
 description: ""
-pubDate: 1320626452
+pubDate: 2011-11-06
 permalink: prose/cssoff-recap
 tags:
 - Left Brain

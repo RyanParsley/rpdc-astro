@@ -2,7 +2,7 @@
 
 title: Mobile mockups in Illustrator
 description: ""
-pubDate: 1334538725
+pubDate: 2012-04-15
 tags:
 - Right Brain
 ---

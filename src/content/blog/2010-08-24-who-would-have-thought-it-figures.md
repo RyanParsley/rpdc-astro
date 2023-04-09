@@ -1,7 +1,7 @@
 ---
 title: Who would have thought? It figures
 description: ""
-pubDate: 1282698316
+pubDate: 2010-08-24
 permalink: prose/who-would-have-thought-it-figures
 tags: []
 ---

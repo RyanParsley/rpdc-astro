@@ -1,7 +1,7 @@
 ---
 title: FOWA 08 in 80 words or less
 description: ""
-pubDate: 1213653254
+pubDate: 2008-06-16
 permalink: prose/fowa-08-80-words-or-less
 tags:
 - Right Brain

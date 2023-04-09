@@ -1,7 +1,7 @@
 ---
 title: 'Vim tip: Fun with tags'
 description: ""
-pubDate: 1326047103
+pubDate: 2012-01-08
 tags:
 - Left Brain
 ---

@@ -1,7 +1,7 @@
 ---
 title: Monroy Seminar Review
 description: ""
-pubDate: 1202349227
+pubDate: 2008-02-06
 permalink: prose/monroy-seminar-review
 tags:
 - Right Brain

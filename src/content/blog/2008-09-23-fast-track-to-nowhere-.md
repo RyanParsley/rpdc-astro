@@ -1,7 +1,7 @@
 ---
 title: Fast track to nowhere.
 description: ""
-pubDate: 1222207399
+pubDate: 2008-09-23
 permalink: prose/fast-track-nowhere
 tags:
 - Confabulation

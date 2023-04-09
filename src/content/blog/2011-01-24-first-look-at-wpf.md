@@ -1,7 +1,7 @@
 ---
 title: First look at WPF
 description: ""
-pubDate: 1295923494
+pubDate: 2011-01-24
 permalink: prose/first-look-wpf
 tags:
 - Left Brain

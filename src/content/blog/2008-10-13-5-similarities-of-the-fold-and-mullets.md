@@ -1,7 +1,7 @@
 ---
 title: 5 Similarities of the fold and mullets
 description: ""
-pubDate: 1223933421
+pubDate: 2008-10-13
 permalink: prose/5-similarities-fold-and-mullets
 tags:
 - Confabulation

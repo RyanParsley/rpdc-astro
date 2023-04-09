@@ -1,7 +1,7 @@
 ---
 title: Let go and let cloud
 description: ""
-pubDate: 1298157214
+pubDate: 2011-02-19
 permalink: prose/let-go-and-let-cloud
 tags:
 - Confabulation

@@ -1,7 +1,7 @@
 ---
 title: On Skinning Cats
 description: ""
-pubDate: 1233009626
+pubDate: 2009-01-26
 permalink: prose/skinning-cats
 tags: []
 ---

@@ -1,7 +1,7 @@
 ---
 title: What is the point of dp?
 description: ""
-pubDate: 1332719471
+pubDate: 2012-03-25
 tags:
 - Left Brain
 ---

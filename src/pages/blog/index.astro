@@ -21,9 +21,11 @@ const posts = (await getCollection('blog')).sort(
 	}
 </style>
 
-<Layout>
+<Layout
+	title="Things I've written"
+	description="A collection of blog posts"
+	>
 	<section>
-		<h1>Things I've written</h1>
 		<ul>
 			{
 				posts.map((post) => (

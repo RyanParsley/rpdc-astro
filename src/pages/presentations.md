@@ -4,6 +4,8 @@ permalink: /presentations/
 layout: '../layouts/Page.astro'
 
 ---
+# Presentations
+
 Over the past few years, I've given the following talks. I enjoy sharing the tools, techniques and opinions that help me make things.
 
 ## Testing 101

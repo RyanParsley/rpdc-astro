@@ -26,6 +26,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				font-style: italic;
 			}
 		</style>
+		<script type="module">
+			import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+			const lightbox = new PhotoSwipeLightbox({
+			  gallery: '#image-gallery',
+			  children: 'a',
+			  pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+			});
+			lightbox.init();
+		</script>
 	</head>
 
 	<body>

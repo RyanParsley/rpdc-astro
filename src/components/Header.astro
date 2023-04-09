@@ -4,9 +4,9 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<h2>
+	<a class="site-title" href="/">
 		{SITE_TITLE}
-	</h2>
+	</a>
 	<nav>
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
@@ -14,17 +14,33 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="/resume">Resume</HeaderLink>
 		<HeaderLink href="/presentations">Presentations</HeaderLink>
 		<HeaderLink href="/contact">Contact</HeaderLink>
-		<HeaderLink href="https://twitter.com/ryanparsley" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/ryanparsley" target="_blank">GitHub</HeaderLink>
 	</nav>
 </header>
 <style>
 	header {
-		margin: 0em 0 2em;
-		padding: 1rem;
-		border-bottom: solid 1px #ccc;
+		padding: 1.5rem 1.5rem 1rem 1.5rem;
+		border-bottom: solid 1px var(--nord3);
+		background-color: var(--nord1);
 	}
-	h2 {
-		margin: 0.5em 0;
+	nav {
+		text-align: right;
+		margin-top: .5rem;
+	}
+	.site-title {
+		text-align: left;
+		text-decoration: none;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	@media screen and (min-width: 800px) {
+		header {
+			display: flex;
+		}
+		nav {
+			flex: 1;
+		}
+		.site-title {
+			flex: 0
+		}
 	}
 </style>

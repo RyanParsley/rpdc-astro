@@ -17,8 +17,28 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 		display: inline-block;
 		text-decoration: none;
 	}
+	a:hover {
+		position: relative;
+	}
 	a.active {
 		font-weight: bolder;
-		text-decoration: underline;
+	}
+	a:hover:before {
+		-webkit-transform: scaleX(1);
+		-ms-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+	a:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 4px;
+		background: var(--nord4);
+		width: 100%;
+		-webkit-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		-webkit-transform: scaleX(0) translate3d(0,0,0);
+		transform: scaleX(0) translateZ(0);
 	}
 </style>

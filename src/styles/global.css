@@ -1,23 +1,20 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+@import "./nord.css";
+
 html, body {
 	padding: 0;
 	margin: 0;
 }
 html {
-	background-color: #ccc;
+  	background-color: var(--nord1);
 }
 body {
 	font-family: Verdana, sans-serif;
 	text-align: left;
-	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+  	background-color: var(--nord0);
+  	color: var(--nord6);
 }
 main {
 	margin: auto;
@@ -33,20 +30,44 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+  	color: var(--nord4);
 }
 a {
-	color: #3273dc;
+	color: var(--nord9);
+}
+a:hover {
+	color: var(--nord10);
+}
+a:visited {
+	color: var(--nord8);
 }
 nav a {
 	margin-right: 10px;
 }
+textarea, input {
+	display: block;
+    background: var(--nord3);
+    border: solid var(--nord9);
+    color: var(--nord6);
+    padding: 0.5rem 0.5rem 0.25rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	border-radius: 3px;
+}
+
+input[type="submit"] {
+    background: var(--nord6);
+    border: solid var(--nord2);
+    color: var(--nord3);
+}
+input[type="submit"]:hover {
+	cursor: pointer;
+    background: var(--nord4);
+	color: var(--nord1);
+}
+
 textarea {
 	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
 }
 content {
 	line-height: 1.6;
@@ -60,7 +81,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: var(--nord3);
 }
 pre {
 	padding: 1rem;
@@ -69,8 +90,8 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border: 1px solid var(--nord10);
+	color: var(--nord10);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;

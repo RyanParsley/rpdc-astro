@@ -1,7 +1,9 @@
 ---
 title:  "CLI Driven Drupal"
 categories: drupal cli composer drush
-description: ""
+description: "It's easy to get Drupal up and running by clicking around
+drupal.org, downloading and extracting packages, but that's not how I do
+it."
 pubDate:   2017-06-13 16:47:00 -0400
 ---
 

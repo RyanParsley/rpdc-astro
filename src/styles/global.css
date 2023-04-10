@@ -8,7 +8,7 @@ html {
   	background-color: var(--nord1);
 }
 body {
-	font-family: Verdana, sans-serif;
+	font-family: "Roboto Mono", monospace; 
 	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -21,7 +21,6 @@ main {
 	padding: 20px;
 	max-width: 65ch;
 }
-
 h1,
 h2,
 h3,
@@ -32,6 +31,48 @@ strong,
 b {
   	color: var(--nord4);
 }
+h1 {
+	font-size: 2.2rem;
+	font-weight: 100;
+	margin: .5rem 0 .25rem 0;
+	line-height: 1.5;
+}
+h2 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	margin: 1.5rem 0 .25rem 0;
+	line-height: 1.5;
+	color: var(--nord8);
+}
+h3 {
+	font-size: 1.25rem;
+	font-weight: 200;
+	margin: 1.5rem 0 .25rem 0;
+	line-height: 1.2;
+	color: var(--nord8);
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 200;
+	margin: .5rem 0 .25rem 0;
+	line-height: 1.2;
+	color: var(--nord9);
+}
+h5 {
+	font-size: 2rem;
+	font-weight: 200;
+	margin: .25rem 0 .25rem 0;
+	line-height: 1.5;
+}
+h6 {
+	font-size: 2rem;
+	font-weight: 200;
+	margin: .25rem 0 .25rem 0;
+	line-height: 1.5;
+}
+
+
+
 a {
 	color: var(--nord9);
 }
@@ -95,4 +136,12 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+.pagination .pagination__list {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+	justify-content: center;
+	padding: unset;
 }

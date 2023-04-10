@@ -1,7 +1,7 @@
 ---
 title: Alexa Watson integration
 categories: node cli watson nlp alexa
-description: ""
+description: Here are notes from building a proof of concept around integrating Watson Retrieve and Rank service into an Alexa skill.
 pubDate:   2017-06-16 16:47:00 -0400
 ---
 

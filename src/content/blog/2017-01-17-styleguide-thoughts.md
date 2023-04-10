@@ -1,6 +1,6 @@
 ---
 title: Styleguide Thoughts
-description: ""
+description: "A properly leveraged styleguide can be a great communication tool between designer and developers."
 pubDate:   2017-01-17 16:47:00 -0400
 ---
 

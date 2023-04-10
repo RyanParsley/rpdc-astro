@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import PostLink from '../components/PostLink.astro';
 import Layout from '../layouts/Page.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+).slice(0,5);
 ---
 <Layout title="Welcome!">
 	<section>
@@ -14,11 +14,24 @@ const posts = (await getCollection('blog')).sort(
 			{
 				posts.map((post) => (
 					<li>
-						<FormattedDate date={post.data.pubDate} />
-						<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+						<PostLink
+							href={`/blog/${post.slug}/`}
+							text= {post.data.title}
+							date={post.data.pubDate}
+							description={post.data.description}
+						/>
 					</li>
 				))
 			}
 		</ul>
 	</section>
 </Layout>
+<style lang="scss">
+	ul {
+		list-style: none;
+		padding: unset;
+	}
+	section > h2 {
+		font-size: 1.25rem;
+	}
+</style>

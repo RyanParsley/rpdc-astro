@@ -4,7 +4,7 @@ description: ""
 pubDate: 2011-01-24
 permalink: prose/first-look-wpf
 tags:
-- Left Brain
+  - Left Brain
 ---
 
 I just finished the first day of a three day course I’m taking on WPF. I have looked at it briefly from time to time, but this is the first real attempt at picking up the skill. If you’re not familiar with WPF it is a relatively new way of writing user interfaces for .NET apps. I’m hoping that with a stronger understanding WPF, I’ll be better equipped to both design desktop apps.

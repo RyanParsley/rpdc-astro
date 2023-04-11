@@ -23,6 +23,8 @@
     "sass": "^1.61.0"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^1.2.0"
+    "@astrojs/partytown": "^1.2.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0"
   }
 }

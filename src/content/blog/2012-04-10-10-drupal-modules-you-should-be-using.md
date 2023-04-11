@@ -3,8 +3,9 @@ title: 10 Drupal modules you should be using
 description: ""
 pubDate: 2012-04-10
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 I make a lot of websites with Drupal. Since I do this a lot, I've been spending time working on a way to speed up and/or automate the process as much as possible. This <strike>distraction</strike> project had the fortunate byproduct of the following list.
 
 This is a list of modules that tend to make it into every Drupal project I build these days. These modules are mostly about extending Drupal as a CMS, so they'll enhance just about any kind of site. They are the modules that will make your admin users happy and likely reduce the support calls you get (making you happy).

@@ -3,8 +3,9 @@ title: Getting a Rails app set up for Heroku
 description: ""
 pubDate: 2013-06-07
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 I find myself daisy chaining a few blog posts together to get up and running with Rails. Here are the steps that I took most recently to deploy to Heroku.
 
 ## Initial setup
@@ -37,7 +38,9 @@ Add the Sass version of Bootstrap and follow the instructions at https://github.
 ```
 gem 'bootstrap-sass', '~> 2.3.1.3'
 ```
+
 ## Create your first resource
+
 Generate the scaffold and set up your database.
 
 ```
@@ -54,7 +57,7 @@ root to: 'newsletters#index'
 
 Remove "/public/index.html".
 
-## Make Heroku happy. 
+## Make Heroku happy.
 
 Change this in "/config/application.rb"
 
@@ -80,4 +83,3 @@ git push heroku master
 ## Piece of cake!
 
 That should yield a good jumping off place for most apps. Don't forget to duplicate the Heroku create steps for a staging environment. You'll thank me later.
-

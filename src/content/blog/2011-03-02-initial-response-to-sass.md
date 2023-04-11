@@ -3,8 +3,9 @@ title: Initial response to Sass
 description: ""
 pubDate: 2011-03-02
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 <p>I really want to like Sass, I have tried to pick it up a couple of times. Granted, each time I have played with it thus far, has been a fairly short interval. My most recent forray with it underscored why I think it hasn&#8217;t quite stuck with me yet. My markup/coding conventions seem to inherently solve most of the issues that Sass tackles.</p>
 
 <h2>Things that seem redundant</h2>

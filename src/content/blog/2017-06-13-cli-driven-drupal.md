@@ -1,10 +1,8 @@
 ---
-title:  "CLI Driven Drupal"
+title: "CLI Driven Drupal"
 categories: drupal cli composer drush
-description: "It's easy to get Drupal up and running by clicking around
-drupal.org, downloading and extracting packages, but that's not how I do
-it."
-pubDate:   2017-06-13 16:47:00 -0400
+description: "It's easy to get Drupal up and running by clicking around drupal.org, downloading and extracting packages, but that's not how I do it."
+pubDate: 2017-06-13 16:47:00 -0400
 ---
 
 It's easy to get Drupal up and running by clicking around
@@ -54,6 +52,7 @@ sudo vim /etc/hosts
 ```
 
 Add a new entry like:
+
 ```
 127.0.0.1 drupal.dev
 ```
@@ -78,15 +77,19 @@ At this point you can visit the http://drupal.dev (or whatever local domain name
 ```
 drush site-install standard --db-url='mysql://drupalTest:drupalTest@localhost/drupal-test' --site-name=Example --account-name=ryan --account-pass=drupalTest
 ```
+
 ## Tweak config (hopefully optional, but I had to)
+
 Something about my mySQL set up forced me to update the host value in `sites/default/settings.php`. I had to change `localhost` to `127.0.0.1`. Then, all was well.
 
 ## Update file permissions
+
 ```
 chmod -R 777 sites/default/files
 ```
 
 ## May want to clear cache for good measure
+
 Since we have to manually adjust write permission to the files directory, and that's where all sorts of theming goodness is built, you probably have broken website until the next cron job runs.
 
 ```
@@ -98,6 +101,7 @@ drush cache-rebuild
 Congratulations, you installed Drupal!
 
 ## Prerequisites
+
 Here are a few tasks you'll need to do before setting up Drupal if you haven't yet.
 
 ### Install Drush
@@ -105,6 +109,7 @@ Here are a few tasks you'll need to do before setting up Drupal if you haven't y
 Drush is one of the killer features of drupal. Be sure to install that right away if you haven't already.
 
 ### Raise memory limit for composer
+
 The default is 128M which was not enough. Check your limit with `php -r "echo ini_get('memory_limit').PHP_EOL;"`
 
 #### If you haven't adjusted yours in the past, update `memory_limit` in your php.ini.
@@ -114,4 +119,5 @@ My file was found at `/usr/local/etc/php/5.6/php.ini`
 If you don't know where your php.ini file is, run `php --ini`
 
 ### Set your timezone in php.ini
+
 See above for how to locate your file, there is a `timezone` field commented out by default.

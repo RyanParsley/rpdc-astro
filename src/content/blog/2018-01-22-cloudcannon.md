@@ -5,9 +5,9 @@ categories:
 tags:
   - link
   - Left Brain
-link: 'https://cloudcannon.com'
+link: "https://cloudcannon.com"
 description: "CloudCannon offers a delightful patina to an otherwise unchanged Jekyll site."
-pubDate:   2018-01-22 16:47:00 -0400
+pubDate: 2018-01-22 16:47:00 -0400
 ---
 
 A client recently requested a site be set up on [CloudCannon](https://cloudcannon.com). I hadn't heard of it, so I gritted my teeth and began to read the documentation. The tension quickly washed away as I realized "this is my kind of product".

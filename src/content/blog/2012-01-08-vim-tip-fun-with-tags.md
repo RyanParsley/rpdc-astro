@@ -1,10 +1,11 @@
 ---
-title: 'Vim tip: Fun with tags'
+title: "Vim tip: Fun with tags"
 description: ""
 pubDate: 2012-01-08
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 HTML can feel unwieldy and inefficient to edit. There are lots of great tools and alternate syntaxes that make this easier... but who wants to set up a whole framework and all the dependancies that come with that just to be <em>more efficient</em>. With a basic Vim command and the [surround plugin](https://github.com/tpope/vim-surround) you can greatly increase your productivity traversing and manipulating tags.
 
 ## Say, for instance, you have:

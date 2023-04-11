@@ -4,8 +4,8 @@ description: ""
 pubDate: 2011-11-06
 permalink: prose/cssoff-recap
 tags:
-- Left Brain
-- Right Brain
+  - Left Brain
+  - Right Brain
 ---
 
 I recently competed in [UnmatchedStyle’s CSSOff competition](http://www.unmatchedstyle.com/cssoff/) where frontend developers each took a crack at marking up the same Photoshop document. Submissions are to be judged based on a list of parameters including: semantics, resource optimization, legacy browser support and general code cleanliness. We were encouraged to use HTML5 and tasked to support browsers as old as IE6. Here are some observations I made during and since the competition. For the TL;DR crowd, I have a version of my entry hosted in [the lab](http://lab.ryanparsley.com/tripledare) and I uploaded the source to [github](https://github.com/RyanParsley/TripleDare).

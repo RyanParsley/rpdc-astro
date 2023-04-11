@@ -1,44 +1,44 @@
 ---
-import type { HTMLAttributes } from 'astro/types';
+import type { HTMLAttributes } from "astro/types";
 
-type Props = HTMLAttributes<'a'>;
+type Props = HTMLAttributes<"a">;
 
 const { href, class: className, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
-	<slot />
+  <slot />
 </a>
 <style>
-	a {
-		display: inline-block;
-		text-decoration: none;
-	}
-	a:hover {
-		position: relative;
-	}
-	a.active {
-		font-weight: bolder;
-	}
-	a:hover:before {
-		-webkit-transform: scaleX(1);
-		-ms-transform: scaleX(1);
-		transform: scaleX(1);
-	}
-	a:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 4px;
-		background: var(--nord4);
-		width: 100%;
-		-webkit-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
-		-webkit-transform: scaleX(0) translate3d(0,0,0);
-		transform: scaleX(0) translateZ(0);
-	}
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  a:hover {
+    position: relative;
+  }
+  a.active {
+    font-weight: bolder;
+  }
+  a:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background: var(--nord4);
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+    transform: scaleX(0) translateZ(0);
+  }
 </style>

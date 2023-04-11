@@ -4,7 +4,7 @@ description: ""
 pubDate: 2011-02-19
 permalink: prose/let-go-and-let-cloud
 tags:
-- Confabulation
+  - Confabulation
 ---
 
 I’m a renting kind of guy. I rent my apartment, I rent movies and I rent the comments on my podcast. I rent things that I don’t want to be burdoned with storing or maintaining. Sovereignty is old fashioned. There are many great services out there that solve all sorts of problems so you don’t have to. There’s freshbooks for invoicing, Basecamp for project management, Shopify for commerce, Twitter for… uh… tweeting, and Disqus for comments.

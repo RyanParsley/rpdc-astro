@@ -3,8 +3,9 @@ title: Setting up Middleman and Anvil with RVM
 description: ""
 pubDate: 2013-07-17
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 <p>I&#8217;m a big fan of designing with code, design in the browser or&#8230; whatever you want to call it. <a href="http://middlemanapp.com/">Middleman</a> and <a href="http://anvilformac.com/">Anvil</a> work out as a nice pairing to create an efficient workflow. The rub is they don&#8217;t play well together without a touch of configuration up front. </p>
 <h2>In the documentation</h2>
 <p><code>middleman init my_new_project --rack</code></p>

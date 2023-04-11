@@ -1,11 +1,10 @@
 ---
-
 title: Illustrating on the iPad
 description: ""
 pubDate: 2012-11-19
 permalink: prose/illustrating-ipad
 tags:
-- Right Brain
+  - Right Brain
 ---
 
 Up until recently, I've been reluctant to do much sketching digitally. This month, I found the perfect excuse to explore a purely digital process. I’m currently taking part in an event called [30 Characters in 30 Days](http://www.30characters.com/author/ryanparsley/). There’s not much more to the challenge than the title suggests. Participants are simply tasked with creating 30 unique characters in the month of November.

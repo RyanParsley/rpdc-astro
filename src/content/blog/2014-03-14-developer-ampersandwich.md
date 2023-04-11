@@ -1,6 +1,6 @@
 ---
-title:  "AEA Debrief: The Developer's Ampersandwich"
-pubDate:   2014-03-13 15:08:10 -0400
+title: "AEA Debrief: The Developer's Ampersandwich"
+pubDate: 2014-03-13 15:08:10 -0400
 description: ""
 categories: design code
 ---
@@ -80,7 +80,7 @@ Like any deep subject, typography can be rather intimidating to get started with
 <li>Proxima&nbsp;Nova</li>
 </ol>
 
-###  Net Magazine showcase top&nbsp;fonts
+### Net Magazine showcase top&nbsp;fonts
 
 <ol>
 <li>Futura</li>
@@ -106,14 +106,12 @@ Looking at her list, I found it interesting that there was a bit of overlap betw
 5. Brandon Grotesque&nbsp;-2
 6. Avenir -&nbsp;2
 
-
 ## Familiarize yourself with web font&nbsp;limitations
 
 This is important for designers and developers alike. Test and share font-families via the browser early in the process to make sure selected fonts will work for your audience before design approval. Don’t for get that “Fixing” a problem in one browser can make things worse in another. Leave plenty of room for <span class="caps">QA</span>.
 
-
->“… sometimes they look just ridiculous on windows machines. It’s a bit better with <span class="caps">IE10</span> but geez oh man. It’s enough to make a well designed website look like crap.” 
-  — Jason&nbsp;Head
+> “… sometimes they look just ridiculous on windows machines. It’s a bit better with <span class="caps">IE10</span> but geez oh man. It’s enough to make a well designed website look like crap.”
+> — Jason&nbsp;Head
 
 ## <span class="caps">CSS</span> Preprocessors/Variables Are Your&nbsp;Friend
 

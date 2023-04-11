@@ -2,7 +2,7 @@
 title: Alexa Watson integration
 categories: node cli watson nlp alexa
 description: Here are notes from building a proof of concept around integrating Watson Retrieve and Rank service into an Alexa skill.
-pubDate:   2017-06-16 16:47:00 -0400
+pubDate: 2017-06-16 16:47:00 -0400
 ---
 
 Here are notes from building a proof of concept around integrating Watson Retrieve and Rank service into an Alexa skill. I'm still learning, so this may not be the best way to do it. This is simply an approach that worked for me. I'm hoping this overview will illustrate how simple it can be to leverage these two complicated sounding platforms together. If I can sort it out, surely someone as clever as yourself can too.

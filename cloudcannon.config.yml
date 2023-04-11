@@ -19,10 +19,10 @@ source:
 # The locations of various types of files within your site.
 # Each path is relative to your site's source folder.
 paths:
-  data: ''
-  collections: ''
+  data: ""
+  collections: ""
   layouts: null
-  static: ''
+  static: ""
   uploads: uploads
 
 # Lets you control the look and behaviour of the Source Editor.

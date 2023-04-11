@@ -1,10 +1,10 @@
 ---
 title: Virtually OK
 description: ""
-pubDate: 2009-01-23 
+pubDate: 2009-01-23
 permalink: prose/virtually-ok
 tags:
-- Left Brain
+  - Left Brain
 ---
 
 I just attended a [Social Media Club](http://socialmediaclubsf.org/ "South Florida Social Media Club") Meeting where David Hinds gave a lecture titled "How to Grow Vibrant Virtual Communities". Hinds has definitely spent some time thinking about social behavior on the web and some of the things he said really got me thinking. I'm not sure how often he presents, but if you get an opportunity to hear what he has to say on the subject, I would recommend giving him your ear (especially if you are new to the subject). Just be sure to think critically. Here's my two cents on this particular talk.

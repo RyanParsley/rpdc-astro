@@ -1,6 +1,7 @@
 ---
-import Layout from '../layouts/Page.astro';
+import Layout from "../layouts/Page.astro";
 ---
+
 <style>
   input {
     display: block;
@@ -9,15 +10,14 @@ import Layout from '../layouts/Page.astro';
 <Layout
   title="What's on your mind?"
   description="Send me a message if you're into that sort of thing"
-  >
-  <form action="https://formspree.io/rmparsley@gmail.com"
-        method="POST">
-      <label>Your Name</label>
-      <input type="text" name="name">
-      <label>Your Email</label>
-      <input type="email" name="_replyto">
-      <label>Message</label>
-      <textarea name="message"></textarea>
-      <input type="submit" value="Send">
+>
+  <form action="https://formspree.io/rmparsley@gmail.com" method="POST">
+    <label>Your Name</label>
+    <input type="text" name="name" />
+    <label>Your Email</label>
+    <input type="email" name="_replyto" />
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send" />
   </form>
 </Layout>

@@ -4,8 +4,9 @@ description: ""
 pubDate: 2012-05-10
 permalink: prose/baseline-grid-illustrator
 tags:
-- Left Brain
+  - Left Brain
 ---
+
 I [recently wrote](http://ryanparsley.com/prose/horizontal-grids-illustrator) about an easy way to set up a grid in Illustrator. While that way is great for setting horizontal rhythm, I follow a different method for creating my baseline grid. This couldn't be simpler thanks to the Transform Effect.
 
 1. Select the Line Segment Tool (\\)

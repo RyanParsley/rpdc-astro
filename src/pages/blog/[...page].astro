@@ -7,7 +7,7 @@ import PostLink from "../../components/PostLink.astro";
 
 export async function getStaticPaths({ paginate }) {
   const response = await getCollection("blog");
-  const data = await response.sort(
+  const data = response.sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
 

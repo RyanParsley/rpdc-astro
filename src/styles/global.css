@@ -75,11 +75,14 @@ h6 {
 a {
   color: var(--nord9);
 }
-a:hover {
-  color: var(--nord10);
-}
 a:visited {
   color: var(--nord8);
+}
+a:hover,
+a:hover h2,
+a:hover h3,
+a:hover p {
+  color: var(--nord10);
 }
 nav a {
   margin-right: 10px;

@@ -5,31 +5,31 @@ import type { HTMLAttributes } from "astro/types";
 type Props = HTMLAttributes<"a">;
 
 const {
-  text,
-  href,
-  date,
-  description,
-  class: className,
-  ...props
+	text,
+	href,
+	date,
+	description,
+	class: className,
+	...props
 } = Astro.props;
 ---
 
 <a href={href} {...props}>
-  <h2>{text}</h2>
-  <FormattedDate date={date} />
-  <p>{description}</p>
+	<h2>{text}</h2>
+	<FormattedDate date={date} />
+	<p>{description}</p>
 </a>
 
 <style lang="scss">
-  a {
-    text-decoration: none;
-    display: inline-block;
-    h2 {
-      text-decoration: underline;
-      margin-bottom: 0;
-    }
-    p {
-      color: var(--nord6);
-    }
-  }
+	a {
+		text-decoration: none;
+		display: inline-block;
+		h2 {
+			text-decoration: underline;
+			margin-bottom: 0;
+		}
+		p {
+			color: var(--nord6);
+		}
+	}
 </style>

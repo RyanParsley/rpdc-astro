@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "RyanParsleyDotCom";
 export const SITE_DESCRIPTION =
-  "A software developer that is curious about quality.";
+	"A software developer that is curious about quality.";

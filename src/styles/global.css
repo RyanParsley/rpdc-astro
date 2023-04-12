@@ -1,13 +1,15 @@
-@import "./nord.css";
+@import url("./nord.css");
 
 html,
 body {
   padding: 0;
   margin: 0;
 }
+
 html {
   background-color: var(--nord1);
 }
+
 body {
   font-family: "Roboto Mono", monospace;
   text-align: left;
@@ -17,11 +19,13 @@ body {
   background-color: var(--nord0);
   color: var(--nord6);
 }
+
 main {
   margin: auto;
   padding: 20px;
   max-width: 65ch;
 }
+
 h1,
 h2,
 h3,
@@ -32,61 +36,71 @@ strong,
 b {
   color: var(--nord4);
 }
+
 h1 {
   font-size: 2.2rem;
   font-weight: 100;
-  margin: 0.5rem 0 0.25rem 0;
+  margin: 0.5rem 0 0.25rem;
   line-height: 1.5;
 }
+
 h2 {
   font-size: 1.5rem;
   font-weight: 200;
-  margin: 1.5rem 0 0.25rem 0;
+  margin: 1.5rem 0 0.25rem;
   line-height: 1.5;
   color: var(--nord8);
 }
+
 h3 {
   font-size: 1.25rem;
   font-weight: 200;
-  margin: 1.5rem 0 0.25rem 0;
+  margin: 1.5rem 0 0.25rem;
   line-height: 1.2;
   color: var(--nord8);
 }
+
 h4 {
   font-size: 1rem;
   font-weight: 200;
-  margin: 0.5rem 0 0.25rem 0;
+  margin: 0.5rem 0 0.25rem;
   line-height: 1.2;
   color: var(--nord9);
 }
+
 h5 {
   font-size: 2rem;
   font-weight: 200;
-  margin: 0.25rem 0 0.25rem 0;
+  margin: 0.25rem 0;
   line-height: 1.5;
 }
+
 h6 {
   font-size: 2rem;
   font-weight: 200;
-  margin: 0.25rem 0 0.25rem 0;
+  margin: 0.25rem 0;
   line-height: 1.5;
 }
 
 a {
   color: var(--nord9);
 }
+
+nav a {
+  margin-right: 10px;
+}
+
 a:visited {
   color: var(--nord8);
 }
+
 a:hover,
 a:hover h2,
 a:hover h3,
 a:hover p {
   color: var(--nord10);
 }
-nav a {
-  margin-right: 10px;
-}
+
 textarea,
 input {
   display: block;
@@ -104,6 +118,7 @@ input[type="submit"] {
   border: solid var(--nord2);
   color: var(--nord3);
 }
+
 input[type="submit"]:hover {
   cursor: pointer;
   background: var(--nord4);
@@ -113,34 +128,43 @@ input[type="submit"]:hover {
 textarea {
   width: 100%;
 }
+
 content {
   line-height: 1.6;
 }
+
 table {
   width: 100%;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 code {
   padding: 2px 5px;
   background-color: var(--nord3);
 }
+
 pre {
   padding: 1rem;
 }
+
 pre > code {
   all: unset;
 }
+
 blockquote {
   border: 1px solid var(--nord10);
   color: var(--nord10);
-  padding: 2px 0px 2px 20px;
-  margin: 0px;
+  padding: 2px 0 2px 20px;
+  margin: 0;
   font-style: italic;
 }
-.pagination .pagination__list {
+
+/* stylelint: disable next line selector-class-name */
+.pagination > ul {
   align-items: center;
   display: flex;
   gap: 1rem;

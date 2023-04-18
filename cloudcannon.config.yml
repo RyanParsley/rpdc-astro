@@ -17,7 +17,6 @@ collections_config: {
         icon: "post_add",
       },
     ],
-
     schemas: {
       default: {
         name: "New Post",
@@ -43,7 +42,7 @@ collections_config: {
         empty_type: "array",
       },
     }
-  },
+  }
 }
 
 # Control which collections are displayed in the CloudCannon site navigation,

@@ -29,6 +29,26 @@ const blog = defineCollection({
 	}),
 });
 
+const draft = defineCollection({
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string().optional(),
+		// Transform string to Date object
+		pubDate: z
+			.string()
+			.optional()
+			.or(z.date())
+			.or(z.number())
+			.transform((val) => new Date(val)),
+		updatedpubDate: z
+			.string()
+			.optional()
+			.transform((str) => (str ? new Date(str) : undefined)),
+		heroImage: z.string().optional(),
+	}),
+});
+
 const tangent = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
@@ -47,4 +67,4 @@ const tangent = defineCollection({
 	}),
 });
 
-export const collections = { blog, tangent, page };
+export const collections = { blog, draft, tangent, page };

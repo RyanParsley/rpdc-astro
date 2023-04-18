@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rule them all
 created: 1313455482
 tags:

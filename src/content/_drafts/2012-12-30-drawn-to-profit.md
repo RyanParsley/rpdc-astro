@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Drawn to profit
 created: 1356896141
 permalink: prose/drawn-profit

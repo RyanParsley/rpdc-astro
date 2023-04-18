@@ -43,39 +43,38 @@ collections_config: {
       },
     }
   },
-    pages: {
-      path: "src/content/pages",
-      url: (filePath, parsed, { buildUrl }) =>
-        buildUrl(filePath, parsed, "/[slug]/").replace(/^\/_/, "/"),
-      output: true,
-      icon: "wysiwyg",
-      _enabled_editors: ["visual"],
-      add_options: [
-        {
-          name: "Add New Page",
-          schema: "default",
-          icon: "note_add",
-        },
-      ],
-      schemas: {
-        default: {
-          name: "New Page",
-          path: "schemas/page.md",
-          new_preview_url: "/",
-        },
-        paginated_collection: {
-          path: "schemas/paginated-collection.md",
-        },
+  pages: {
+    path: "src/content/pages",
+    url: "/[slug]",
+    output: true,
+    icon: "wysiwyg",
+    _enabled_editors: ["visual"],
+    add_options: [
+      {
+        name: "Add New Page",
+        schema: "default",
+        icon: "note_add",
       },
-      _inputs: {
-        content_blocks: {
-          empty_type: "array",
-        },
+    ],
+    schemas: {
+      default: {
+        name: "New Page",
+        path: "schemas/page.md",
+        new_preview_url: "/",
       },
-      filter: {
-        base: "strict",
+      paginated_collection: {
+        path: "schemas/paginated-collection.md",
       },
     },
+    _inputs: {
+      content_blocks: {
+        empty_type: "array",
+      },
+    },
+    filter: {
+      base: "strict",
+    },
+  }
 }
 
 # Control which collections are displayed in the CloudCannon site navigation,
@@ -103,3 +102,4 @@ source_editor:
 # Timezone of your site in IANA format. This is used by date and datetime inputs
 # within the CloudCannon Data Editor.
 timezone: Etc/UTC
+gg

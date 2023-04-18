@@ -1,8 +1,6 @@
 ---
-layout: post
 title: My favorite 10 Android apps
 created: 1276554205
-permalink: prose/my-favorite-10-android-apps-0
 tags:
 - Confabulation
 ---
@@ -16,7 +14,7 @@ The best podcast aggregator I have tried&hellip; and I have installed many of th
 
 ## Aldiko
 This is an ebook reader that can import any (non-DRM) ebooks you have or download from the thousands of public domain books.
-	
+
 ## Twitter
 The official twitter app is becoming my favorite twitter app. Even if you prefer another, you should install this one and turn off notifications so that you get the os addons such as listing recent tweets near your contacts.
 

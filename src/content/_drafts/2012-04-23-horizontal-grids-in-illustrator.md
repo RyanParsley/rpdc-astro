@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Horizontal grids in Illustrator
 created: 1335224180
 permalink: prose/horizontal-grids-illustrator

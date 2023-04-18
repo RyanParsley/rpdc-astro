@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stealing the underpants
 created: 1308188140
 permalink: prose/stealing-underpants

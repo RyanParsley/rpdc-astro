@@ -3,7 +3,7 @@ date:
 title: ''
 tags:
   - blog
-author: Gerard Hopper
+author: Ryan Parsley
 thumb_image:
   image: ''
   image_alt: ''

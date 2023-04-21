@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import PostLink from "../components/PostLink.astro";
-import Layout from "../layouts/Page.astro";
+import PostLink from "@components/PostLink.astro";
+import Layout from "@layouts/Page.astro";
 
 const posts = (await getCollection("blog"))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())

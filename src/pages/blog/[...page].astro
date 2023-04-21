@@ -1,9 +1,9 @@
 ---
-import Layout from "../../layouts/Page.astro";
+import Layout from "@layouts/Page.astro";
 import { Pagination } from "accessible-astro-components";
 import { getCollection } from "astro:content";
 
-import PostLink from "../../components/PostLink.astro";
+import PostLink from "@components/PostLink.astro";
 
 export async function getStaticPaths({ paginate }) {
 	const response = await getCollection("blog");

@@ -1,7 +1,7 @@
 ---
 title: Presentations
 permalink: /presentations/
-layout: "../layouts/Page.astro"
+layout: "@layouts/Page.astro"
 ---
 
 # Presentations

@@ -1,7 +1,7 @@
 ---
 title: Resume
 permalink: /resume/
-layout: "../layouts/Page.astro"
+layout: "@layouts/Page.astro"
 ---
 
 # Resume

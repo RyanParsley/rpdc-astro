@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
-const page = defineCollection({
+const pageCollection = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
 		title: z.string(),
@@ -10,7 +10,7 @@ const page = defineCollection({
 	}),
 });
 
-const blog = defineCollection({
+const blogCollection = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
 		title: z.string(),
@@ -20,16 +20,18 @@ const blog = defineCollection({
 			.string()
 			.or(z.date())
 			.or(z.number())
-			.transform((val) => new Date(val)),
+			.transform((val: string | Date | number) => new Date(val)),
 		updatedpubDate: z
 			.string()
 			.optional()
-			.transform((str) => (str ? new Date(str) : undefined)),
+			.transform((str: string | undefined) =>
+				str ? new Date(str) : undefined
+			),
 		heroImage: z.string().optional(),
 	}),
 });
 
-const draft = defineCollection({
+const draftCollection = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
 		title: z.string(),
@@ -40,16 +42,20 @@ const draft = defineCollection({
 			.optional()
 			.or(z.date())
 			.or(z.number())
-			.transform((val) => new Date(val)),
+			.transform((val: string | Date | number | undefined) =>
+				val ? new Date(val) : new Date()
+			),
 		updatedpubDate: z
 			.string()
 			.optional()
-			.transform((str) => (str ? new Date(str) : undefined)),
+			.transform((str: string | undefined) =>
+				str ? new Date(str) : undefined
+			),
 		heroImage: z.string().optional(),
 	}),
 });
 
-const tangent = defineCollection({
+const tangentCollection = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
 		title: z.string(),
@@ -58,13 +64,20 @@ const tangent = defineCollection({
 		pubDate: z
 			.string()
 			.or(z.date())
-			.transform((val) => new Date(val)),
+			.transform((val: string | Date) => new Date(val)),
 		updatedpubDate: z
 			.string()
 			.optional()
-			.transform((str) => (str ? new Date(str) : undefined)),
+			.transform((str: string | undefined) =>
+				str ? new Date(str) : undefined
+			),
 		heroImage: z.string().optional(),
 	}),
 });
 
-export const collections = { blog, draft, tangent, page };
+export const collections = {
+	blog: blogCollection,
+	draft: draftCollection,
+	tangent: tangentCollection,
+	page: pageCollection,
+};

@@ -2,16 +2,13 @@
 import FormattedDate from "./FormattedDate.astro";
 import type { HTMLAttributes } from "astro/types";
 
-type Props = HTMLAttributes<"a">;
+type Props = HTMLAttributes<"a"> & {
+	text: string;
+	date: Date;
+	description: string;
+};
 
-const {
-	text,
-	href,
-	date,
-	description,
-	class: className,
-	...props
-} = Astro.props;
+const { text, href, date, description, ...props } = Astro.props;
 ---
 
 <a href={href} {...props}>
@@ -24,10 +21,12 @@ const {
 	a {
 		text-decoration: none;
 		display: inline-block;
+
 		h2 {
 			text-decoration: underline;
 			margin-bottom: 0;
 		}
+
 		p {
 			color: var(--nord6);
 		}

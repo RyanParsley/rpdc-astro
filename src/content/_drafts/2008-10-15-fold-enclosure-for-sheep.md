@@ -1,10 +1,10 @@
 ---
-title: 'Fold: enclosure for sheep'
+title: "Fold: enclosure for sheep"
 description: "fix this before publish"
-pubDate: 
+pubDate:
 published: false
 tags:
-- Left Brain
+  - Left Brain
 ---
 
 Let's talk about the fold. I have previously lobbied rather firmly that the fold does not exist on the web, but as of recent I am starting to come around... somewhat. There is a fold, but most people are doing it wrong.

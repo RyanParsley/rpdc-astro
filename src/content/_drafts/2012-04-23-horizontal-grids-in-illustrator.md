@@ -3,8 +3,9 @@ title: Horizontal grids in Illustrator
 created: 1335224180
 permalink: prose/horizontal-grids-illustrator
 tags:
-- Right Brain
+  - Right Brain
 ---
+
 <p>Here are the steps I take to efficiently sketch out grids in Illustrator. The best part is: step 6 can be revisited at any time and modified, should you change your mind or want to experiment further. This kind of flexibility is quickly winning me over to Illustrator for&nbsp;wireframing.</p>
 <ol class="long">
 <li>Create a 1024px X 768px document </li>

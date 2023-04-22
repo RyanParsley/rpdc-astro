@@ -4,116 +4,69 @@
 # Collections are related sets of content files, typically grouped by folder.
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
-collections_config: {
-  posts: {
-    path: "src/content/blog",
-    output: true,
-    url: "/blog/[slug]",
-    _enable_editors: ["content", "visual"],
-    add_options: [
+collections_config:
+  {
+    posts:
       {
-        name: "Add New Post",
-        schema: "default",
-        icon: "post_add",
+        path: "src/content/blog",
+        output: true,
+        url: "/blog/[slug]",
+        _enable_editors: ["content", "visual"],
+        add_options:
+          [{ name: "Add New Post", schema: "default", icon: "post_add" }],
+        schemas: { default: { name: "New Post", path: "schemas/post.md" } },
+        _inputs:
+          {
+            title: { empty_type: "string" },
+            image: { empty_type: "string" },
+            image_alt: { empty_type: "string" },
+            author: { empty_type: "string" },
+            tags:
+              { type: "multiselect", allow_create: true, empty_type: "array" },
+          },
       },
-    ],
-    schemas: {
-      default: {
-        name: "New Post",
-        path: "schemas/post.md",
-      },
-    },
-    _inputs: {
-      title: {
-        empty_type: "string",
-      },
-      image: {
-        empty_type: "string",
-      },
-      image_alt: {
-        empty_type: "string",
-      },
-      author: {
-        empty_type: "string",
-      },
-      tags: {
-        type: "multiselect",
-        allow_create: true,
-        empty_type: "array",
-      },
-    }
-  },
-  drafts: {
-    path: "src/content/_drafts",
-    output: false,
-    url: "/blog/[slug]",
-    _enable_editors: ["content", "visual"],
-    add_options: [
+    drafts:
       {
-        name: "Add New Post",
-        schema: "default",
-        icon: "post_add",
+        path: "src/content/_drafts",
+        output: false,
+        url: "/blog/[slug]",
+        _enable_editors: ["content", "visual"],
+        add_options:
+          [{ name: "Add New Post", schema: "default", icon: "post_add" }],
+        schemas: { default: { name: "New Post", path: "schemas/post.md" } },
+        _inputs:
+          {
+            title: { empty_type: "string" },
+            image: { empty_type: "string" },
+            image_alt: { empty_type: "string" },
+            author: { empty_type: "string" },
+            tags:
+              { type: "multiselect", allow_create: true, empty_type: "array" },
+          },
       },
-    ],
-    schemas: {
-      default: {
-        name: "New Post",
-        path: "schemas/post.md",
-      },
-    },
-    _inputs: {
-      title: {
-        empty_type: "string",
-      },
-      image: {
-        empty_type: "string",
-      },
-      image_alt: {
-        empty_type: "string",
-      },
-      author: {
-        empty_type: "string",
-      },
-      tags: {
-        type: "multiselect",
-        allow_create: true,
-        empty_type: "array",
-      },
-    }
-  },
-  pages: {
-    path: "src/content/pages",
-    url: "/[slug]",
-    output: true,
-    icon: "wysiwyg",
-    _enabled_editors: ["visual"],
-    add_options: [
+    pages:
       {
-        name: "Add New Page",
-        schema: "default",
-        icon: "note_add",
+        path: "src/content/pages",
+        url: "/[slug]",
+        output: true,
+        icon: "wysiwyg",
+        _enabled_editors: ["visual"],
+        add_options:
+          [{ name: "Add New Page", schema: "default", icon: "note_add" }],
+        schemas:
+          {
+            default:
+              {
+                name: "New Page",
+                path: "schemas/page.md",
+                new_preview_url: "/",
+              },
+            paginated_collection: { path: "schemas/paginated-collection.md" },
+          },
+        _inputs: { content_blocks: { empty_type: "array" } },
+        filter: { base: "strict" },
       },
-    ],
-    schemas: {
-      default: {
-        name: "New Page",
-        path: "schemas/page.md",
-        new_preview_url: "/",
-      },
-      paginated_collection: {
-        path: "schemas/paginated-collection.md",
-      },
-    },
-    _inputs: {
-      content_blocks: {
-        empty_type: "array",
-      },
-    },
-    filter: {
-      base: "strict",
-    },
   }
-}
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.

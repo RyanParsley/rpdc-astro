@@ -8,14 +8,16 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "npx eslint --ext .astro src",
+    "lint": "npx eslint ./src --ext .js,.jsx,.ts,.tsx,.astro",
     "lint:style": "npx stylelint '**/*.{css,astro}' --fix",
     "format": "prettier **/*.{css,astro,js,ts,yml,json} --write",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,ts,astro}": "eslint --fix",
-    "*.{css,astro}": "stylelint --fix",
+    "!(public/**/*)*.{js,ts,astro}": [
+      "eslint --fix"
+    ],
+    "*.{css,scss,astro}": "stylelint --fix",
     "*.{css,astro,js,ts,yml,json}": "prettier --write --ignore-unknown"
   },
   "dependencies": {

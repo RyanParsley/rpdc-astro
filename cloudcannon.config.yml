@@ -27,7 +27,7 @@ collections_config:
       },
     drafts:
       {
-        path: "src/content/drafts",
+        path: "src/content/draft",
         output: false,
         url: "/blog/[slug]",
         _enable_editors: ["content", "visual"],

@@ -27,7 +27,7 @@ collections_config:
       },
     drafts:
       {
-        path: "src/content/_drafts",
+        path: "src/content/draft",
         output: false,
         url: "/blog/[slug]",
         _enable_editors: ["content", "visual"],
@@ -46,7 +46,7 @@ collections_config:
       },
     pages:
       {
-        path: "src/content/pages",
+        path: "src/content/page",
         url: "/[slug]",
         output: true,
         icon: "wysiwyg",

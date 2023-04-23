@@ -1,7 +1,7 @@
 ---
 title: "Fold: enclosure for sheep"
 description: "fix this before publish"
-pubDate:
+pubDate: 2008-10-15
 published: false
 tags:
   - Left Brain
